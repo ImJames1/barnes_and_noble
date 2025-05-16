@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root{
+  --gray: #575454;
+  --gold: #C2A02E;
+  --med-gray: #555;
+  --bg-color: var(--gray);
+  --h1-color: var(--gray);
+  --h2-color: var(--gray);
+  --h3-color: black;
+  --button-color: var(--gray);
+  --button-text-color: white;
+  --section-color: white;
+  --paragraph-color: black;
+  --game-output-color: black;
+  --form-color: black;
+  --field-set-color: black;
+  --box-shadow: -5px 5px 5px var(--med-gray);
+  --hover-shadow: -3px 3px 6px var(--med-gray);
+  
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+}
+
+/* Dark Mode Styles */
+.darkMode{
+  --bg-color: black;
+  --h1-color: white;
+  --h2-color: var(--gold);
+  --h3-color: white;
+  --section-color: var(--gray);
+  --button-color: var(--gold);
+  --button-text-color: white;
+  --box-shadow: -5px 5px 5px black;
+  --hover-shadow: -3px 3px 6px black;
+  --paragraph-color: white;
+  --game-output-color: white;
+  --form-color: white;
+  --field-set-color: white;
+}
+
+/* Header/Main/Footer Styles */
+header, main, footer{
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  background-color: var(--section-color);
+  margin-bottom: .5rem;
+  height: 175px;
+}
+
+/* Mode Image Styles */
+#themeChangeImg, #themeChangeImg2{
+  grid-column: 2 / -1;
+  width: 50px;
+  margin-left: 500px;
+}
+
+#themeChangeImg2{
+  background-color: var(--gray);
+}
+
+/* Headings Styles */
+h1, h2, h3, h4{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+h1{
+  font-size: 4rem;
+  margin: 1rem 0 1rem 0;
+  color: var(--h1-color);
+}
+
+h2{
+  text-align: center;
+  font-size: 3rem;
+  grid-column: 1 / -1;
+  color: var(--h2-color);
+}
+
+h3{
+  font-size: 2rem;
+  color: var(--h3-color);
+}
+
+/* And Sign Styles */
+#andSign{
+  color: var(--gold);
+}
+
+/* Invalid & Required Styles */
+.required, .errorMessage{
+  color: red;
+}
+
+
+/* Paragraph Styles */
+p{
+  max-width: 65ch;
+  padding: 1rem 0;
+  margin: 0 auto;
+  color: var(--paragraph-color);
+  font-size: 1.2rem;
+}
+
+
+/* Buttons/Submit Styles */
+button, input[type="submit"]{
+  display: block;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+/* Navigation Styles */
+nav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-right: 20px;
+}
+
+nav a{
+  display: block;
+  padding: .3rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--button-text-color);
+  font-size: 1.5rem;
+  background-color: var(--button-color);
+  box-shadow: var(--box-shadow);
+}
+
+/* Hero Image Styles */
+#heroImage{
+  width: 100%;
+}
+
+/* Body Styles */
+body{
+  line-height: 1.5;
+}
+
+/* Sections Padding/Margin */
+#aboutUs, #productDisplay, #game, #contactUs{
+  padding: 2rem;
+  margin-bottom: .5rem;
+  background-color: var(--section-color);
+}
+
+/* About Us Styles */
+#aboutUs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#storeFront{
+  justify-self: center;
+  height: 300px;
+}
+
+/* Hide Styles */
+.hide{
+  display: none;
+}
+
+/* Product Display Styles */
+#productDisplay{
+  padding: 2rem;
+  height: 600px;
+}
+
+#productDisplay .show{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 1rem;
+  height: 450px;
+}
+
+#productDisplay img{
+  grid-row: 1 / -1;
+  width: 275px;
+}
+
+#productDisplay h3{
+    grid-column: 2 / -1;
+    align-self: end;
+}
+
+.switchButtons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  width: fit-content;
+  margin: 1.5rem auto;
+}
+
+.switchButton{
+  font-size: 1.2rem;
+  padding: .5rem;
+}
+
+/* Guessing Game Styles*/
+#game{
+  padding: 2rem;
+
+}
+
+#game div{
+  max-width: 800px;
+  margin: 0 auto;
+  
+}
+
+#gameForm{
+  width: 330px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+#game input{
+  display: inline-block;
+}
+
+#game label{
+  display: inline-block;
+  width: auto;
+}
+
+#gameSubmitButton{ 
+  display: block;
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: .5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#userNumOutput, #winningNumOutput{
+  color: var(--game-output-color);
+}
+
+#gameOutput{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#gameOutput span{
+  display: block;
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: .5rem auto;
+  padding: .4rem;
+}
+
+#gameResult{
+  text-align: center;
+}
+
+
+/* Form Styles */
+form{
+  width: 350px;
+  margin-left: 450px;
+  color: var(--form-color);
+}
+
+#customerForm label{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.styleForm input, .styleForm textarea{
+  width: 300px;
+  font-size: 1rem;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+#customerForm textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+fieldset{
+  margin-top: 15px;
+  display: flex;
+  border: 1px solid var(--field-set-color);
+  width: 300px;
+}
+
+fieldset input{
+  width: 20px;
+}
+
+#prefPhone{
+  margin-left: 140px;
+}
+
+#formValid h3{
+  margin-top: 50px;
+}
+
+#formValid p{
+  text-align: center;
+}
+
+
+#customerSubmit{
+  width: 300px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+/* Footer Styles */
+footer{
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--section-color);
+  margin-top: .5rem;
+}
+
+/* Hover Styles */
+button:hover, input[type="submit"]:hover, nav a:hover{
+  box-shadow: var(--hover-shadow);
+}

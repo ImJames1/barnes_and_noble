@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barnes & Noble</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="index.js" async></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- Image Source of themeChangeImg: https://w7.pngwing.com/pngs/735/327/png-transparent-dark-mode-night-moon-ink-basic-icon.png-->
+
+            <!-- Image Source of themeChangeImg2: https://static.thenounproject.com/png/4808961-200.png-->
+            
+            <img id="themeChangeImg" class="show" src="images/dark_mode.jpg" alt="Light Mode Control">
+            <img id="themeChangeImg2" class="hide" src="images/light_mode.png" alt="Dark Mode Control">
+            <h1>BARNES <span id="andSign">&</span> NOBLE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#productDisplay">Bestsellers</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <main>
+            <!-- Image Source: https://dispatch.barnesandnoble.com/content/dam/ccr/bnpress/homepage/hero_mobile_2x.jpg -->
+            <img id= "heroImage" src="images/bn_hero_image.jpg" alt="Hero image showing books, books on an E-reader, bookmarks, and coffee on a blue background">
+            
+            <section id="aboutUs">
+                <h2>About Us</h2>
+                <p>Barnes & Noble is a bookstore that sells books, magazines, newspapers, and more. The company's history traces back to 1873, when Charles M. Barnes started a book company in Wheaton, Illinois. His son, William Barnes, traveled to New York and joined G. Clifford Noble to create Barnes & Noble. Today, Barnes & Noble is the largest retail bookseller in the United States, and has 600 bookstores across all 50 states.</p>
+                <!-- Image Source: https://media.istockphoto.com/id/1303178606/photo/a-barnes-noble-book-store-in-buffalo-new-york-usa.jpg?s=612x612&w=0&k=20&c=-FhAxdfB8PgOglSEkkXgqHy5hclZr6EHa2TPkCqyeSs= -->
+                <img id="storeFront" src="images/bn_store_front.jpg" alt="Front of Barnes and Nobles bookstore with vibrant purple and red flowers, a multi-colored statue of a bull, and green shrubs in front of the store">
+            </section>
+          
+            <section id="productDisplay">
+                <h2>Bestsellers</h2>
+                <section id="product1" class="show">
+                    <h3>The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About</h3>
+                    <!-- Image Source: https://prodimage.images-bn.com/pimages/9781401971366_p0_v8_s600x595.jpg-->
+                    <img src="images/let_them_book.jpg" alt="'The Let Them Theory' book cover">
+                    <p>'The Let Them Theory' is a self-help book written by Mel Robbins. Robbins returns to the art of literature with a step-by-step guide on how to focus on what you can control and letting go of what you cannot control. Robbins teaches her readers that releasing the need to manage everyone and everything can improve their lives.</p>
+                </section>
+
+                <section id="product2" class="hide">
+                    <h3>Sunrise on the Reaping (B&N Exclusive Edition) (A Hunger Games Novel)</h3>
+                    <!-- Image Source: https://prodimage.images-bn.com/pimages/9781546175759_p1_v3_s600x595.jpg  -->
+                    <img src="images/sunrise_book.jpg" alt="'Sunrise on the Reaping' book cover">
+                    <p>'Sunrise on the Reaping' is a science fiction, dystopian novel written by Susan Collins. Collins takes readers back to a young Haymitch Abernathy in this prequel novel in the "Hunger Games" series. The story focuses on Haymitch as he is forced to compete in the 50th Hunger Games, where double the amount of tributes are selected from each district to compete in the Games. </p>
+                </section>
+
+                <section id="product3" class="hide">
+                    <h3>The Court of the Dead: A Nico di Angelo Adventure (Signed B&N Exclusive Edition)</h3>
+                    <!-- Image Source: https://prodimage.images-bn.com/pimages/9781368117555_p0_v1_s600x595.jpg-->
+                    <img src="images/court_of_dead_book.jpg" alt="'The Court of the Dead: A Nico di Angelo Adventure' book cover">
+                    <p>'The Court of the Dead: A Nico di Angelo Adventure' is a fantasy-adventure novel written by Rick Riordan and Mark Oshiro. The story follows Nico di Angelo and Will Solace as they investigate a dark force in the Underworld that is targeting and punishing monsters for their past crimes.</p>
+                </section>
+
+                <section id="product4" class="hide">
+                    <h3>Tell Me What You Did: A Novel</h3>
+                    <!-- Image Source: https://prodimage.images-bn.com/pimages/9781464226229_p0_v8_s600x595.jpg-->
+                    <img src="images/tell_me_book.jpg" alt="'Tell Me What You Did: A Novel' book cover">
+                    <p>'Tell Me What You Did: A Novel' is a psychological thriller written by Carter Wilson. Wilson introduces readers to Poe Webb, the host of popular true crime podcast who invites people to anonymously confess their crimes to her audience.</p>
+                </section>
+
+                <section id="product5" class="hide">
+                    <h3>Fourth Wing</h3>
+                    <!-- Image Source: https://prodimage.images-bn.com/pimages/9781649377371_p1_v4_s600x595.jpg-->
+                    <img src="images/fourth_wing_book.jpg" alt="'Fourth Wing' book cover">
+                    <p>'Fourth Wing' is a high fantasy romance novel written by Rebecca Yarros. Yarros welcomes readers to the life of Violet Sorrengail, a young woman who is ordered by her mother to join the dragon-riding Quadrant at Basgiath War College.</p>
+                </section>
+
+                <div class="switchButtons">
+                    <button id="btn1" class="switchButton">The Let Them Theory</button>
+                    <button id="btn2" class="switchButton">Sunrise on the Reaping</button>
+                    <button id="btn3" class="switchButton">The Court of the Dead</button>
+                    <button id="btn4" class="switchButton">Tell Me What You Did: A Novel</button>
+                    <button id="btn5" class="switchButton">Fourth Wing</button>
+                </div>
+            </section>
+            
+            <section id="game">
+                <div>
+                    <h2>Guessing Game</h2>
+                    <p>Enter a number between 1 and 10 in the box below and click the "Play the Game!" button to play. If the number you guess matches the winning number, you win!</p>
+                    <form id="gameForm">
+                        <label for="userGuess">Enter a Number Between 1 and 10: </label>
+                        <input type="number" name="userGuess" id="userGuess" min=1 max=10>
+                        <input type="submit" value="Play the Game!" id="gameSubmitButton">
+                    </form>
+                    <div id="gameResults">
+                        <ul id="gameOutput">
+                            <li id="userNumOutput"><span>1</span>Your Guess</li>
+                            <li id="winningNumOutput"><span>10</span>Winning Number</li>
+                        </ul>
+                        <p id="gameResult"></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contactUs">
+                <h2>Contact Us</h2>
+                <form id="customerForm">
+                    <div class="styleForm">
+                        <label for="fName">First Name:<span class="required">*</span></label>
+                        <span class="errorMessage" id="fNameError"></span>
+                        <input type="text" name="fName" id="fName">
+                                        
+                        <label for="lName">Last Name:<span class="required">*</span></label>
+                        <span class="errorMessage" id="lNameError"></span>
+                        <input type="text" name="lName" id="lName">
+                    </div>
+                        
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+                        <input type="radio" name="contactPref" id="prefEmail">
+                        <label for="prefEmail">Email</label>
+                        <input type="radio" name="contactPref" id="prefPhone">
+                        <label for="prefPhone">Phone</label>
+                    </fieldset>
+                    <span class="errorMessage" id="radioError"></span>  
+                    
+                    <div class="styleForm">                          
+                        <label for="phoneNumber" id="phoneLabel">Phone Number:</label>
+                        <span class="errorMessage" id="phoneError"></span>
+                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        
+                        <label for="email" id="emailLabel">Email Address:</label>
+                        <span class="errorMessage" id="emailError"></span>
+                        <input type="text" name="email" id="email">
+
+                        <label for="comments">Comments:<span class="required">*</span></label>
+                        <span class="errorMessage" id="commentsError"></span>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                                  
+                    <input type="submit" id="customerSubmit" value="Submit">
+                </form>
+                <section id="formValid" class="hide">
+                    <h3>Thank you for your submission!</h3>
+                    <p>Here is the information you sent us:</p>
+                    <p id="formInfo"></p>
+                </section>
+            
+            </section>  
+        </main>
+        <footer>
+            <p>For Educational Purposes Only</p>  
+        </footer>
+    </body>
+</html>
+
